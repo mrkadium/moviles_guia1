@@ -14,7 +14,7 @@
     </style>
     <style name="buttonCalculator">
         <item name="android:layout_width">80dp</item>
+        <item name="android:textSize">18sp</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textColor">@color/colorPrimaryDark</item>
     </style>
 </resources>
