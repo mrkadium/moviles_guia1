@@ -135,7 +135,7 @@ class Calculartor : AppCompatActivity() {
             number2 = 0 //reset number2 so it can take other values
         }
         auxSigno = sign //change/assign the sign
-        var displayText:String = number1.toString() + if(auxSigno == "=") "" else auxSigno //if the sign is not =, concatenate sign
+        val displayText:String = number1.toString() + if(auxSigno == "=") "" else auxSigno //if the sign is not =, concatenate sign
         //auxSigno = if(auxSigno == "=") "" else auxSigno //if it's =, reset it
         tvResultado.text = displayText //set display to number1
     }
