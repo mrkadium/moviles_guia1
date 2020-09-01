@@ -7,7 +7,7 @@ import android.widget.Button
 import android.widget.TextView
 
 class Calculartor : AppCompatActivity() {
-    lateinit var tvOperacion:TextView
+    //lateinit var tvOperacion:TextView
     lateinit var tvResultado:TextView
     lateinit var btnAc:Button
     lateinit var btnDel:Button
@@ -40,7 +40,7 @@ class Calculartor : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_calculartor)
 
-        tvOperacion = findViewById(R.id.tvOperacion)
+        //tvOperacion = findViewById(R.id.tvOperacion)
         tvResultado = findViewById(R.id.tvResultado)
         btnAc = findViewById(R.id.btnAc)
         btnDel = findViewById(R.id.btnDel)
