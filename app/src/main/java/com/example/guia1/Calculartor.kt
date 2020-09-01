@@ -109,8 +109,16 @@ class Calculartor : AppCompatActivity() {
             number1 = (number1*10) + number //number1 will grow
             displayText = "$number1" //set display to number1
         }else{ //if there's already a sign
-            number2 = (number2*10) + number //set number2, 'cause number1 is done
-            displayText = "$number1$auxSigno$number2" //set display to the operation
+            if(auxSigno == "="){//if it's =
+                //reset numbers
+                number1 = 0 //reset number1
+                auxSigno = "" //reset sign
+                number1 = (number1*10) + number //number1 will grow
+                displayText = "$number1" //set display to number1
+            }else{ //if it's another sign
+                number2 = (number2*10) + number //set number2, 'cause number1 is done
+                displayText = "$number1$auxSigno$number2" //set display to the operation
+            }
         }
 
         //set displays
@@ -128,6 +136,7 @@ class Calculartor : AppCompatActivity() {
         }
         auxSigno = sign //change/assign the sign
         var displayText:String = number1.toString() + if(auxSigno == "=") "" else auxSigno //if the sign is not =, concatenate sign
+        //auxSigno = if(auxSigno == "=") "" else auxSigno //if it's =, reset it
         tvResultado.text = displayText //set display to number1
     }
     private fun eraseNumber(){
