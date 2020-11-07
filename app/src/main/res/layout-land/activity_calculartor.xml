@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".Calculartor"
     android:orientation="vertical"
-    android:paddingTop="40dp">
+    android:paddingTop="20dp">
 
     <GridLayout
         android:layout_width="match_parent"
@@ -42,6 +42,7 @@
             style="@style/buttonCalculator"
             android:background="#69ECDF"
             android:text="+" />
+
         <Button
             android:id="@+id/btnRestar"
             style="@style/buttonCalculator"
@@ -99,28 +100,23 @@
             android:background="#69ECDF"
             android:text="=" />
         <Button
-            android:id="@+id/btn0"
-            style="@style/buttonCalculator"
-            android:text="0"
-            android:layout_columnWeight="1"
-            android:layout_columnSpan="3"/>
-        <Button
             android:id="@+id/btnOpen"
             style="@style/buttonCalculator"
             android:background="#69ECDF"
-            android:visibility="gone"
             android:text="("/>
+        <Button
+            android:id="@+id/btn0"
+            style="@style/buttonCalculator"
+            android:text="0"/>
         <Button
             android:id="@+id/btnClose"
             style="@style/buttonCalculator"
             android:background="#69ECDF"
-            android:visibility="gone"
             android:text=")"/>
         <Button
             android:id="@+id/btnPoint"
             style="@style/buttonCalculator"
             android:background="#69ECDF"
-            android:visibility="gone"
             android:text="."/>
     </GridLayout>
 </LinearLayout>
